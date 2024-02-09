@@ -1,0 +1,31 @@
+@import "../../../../../shared-styles/variables.scss";
+
+.booking-info {
+    padding-top:1rem;
+	.booking-row {
+		display: flex;
+        align-items: center;
+        margin-bottom:1rem;
+        svg{
+            color:$primary-5;
+        }
+		.text-wrapper {
+			flex-direction: column;
+			display: flex;
+			justify-content: flex-start;
+			text-align: left;
+            margin-left:1rem;
+			.label-t1 {
+				color: $neutral-7;
+				font-size: $t1;
+                margin:0;
+                margin-bottom:0.5rem;
+			}
+			.label-t3 {
+				color: $neutral-8;
+				font-size: $t3;
+                margin:0;
+			}
+		}
+	}
+}

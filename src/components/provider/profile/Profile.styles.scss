@@ -1,0 +1,77 @@
+@import "../../../shared-styles/variables.scss";
+.profile-wrapper {
+	padding: 1rem 10%;
+	display: flex;
+	.info-wrapper {
+		display: flex;
+		.avatar {
+			padding: 0 2rem 2rem 0;
+			width: 50%;
+			height: 50%;
+			.blank-avatar {
+				background-color: $neutral-0;
+			}
+			.avatar-image {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				background-color: $neutral-0;
+			}
+		}
+	}
+}
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	.link {
+		text-decoration: none;
+	}
+	.icon-span {
+		margin: 0 0.5rem;
+	}
+	.breadcrumb-route {
+		color: $neutral-7;
+		font-size: $t1;
+	}
+	.breadcrumb-name {
+		color: $neutral-8;
+		font-size: $t1;
+	}
+}
+.profile-card {
+	background-color: $neutral-0;
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	.name {
+		color: $neutral-9;
+		font-size: $s-h1;
+		text-align: left;
+		margin: 0;
+	}
+	.title {
+		color: $neutral-7;
+		font-size: $t3;
+		text-align: left;
+		margin:0;
+	}
+	.bio {
+		font-size: $b3;
+		color: $neutral-7;
+		text-align: left;
+		&.trimmed{
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	}
+	.read-button{
+		color: $secondary-5;
+		background-color:transparent;
+		border:none;
+		outline:none;
+		width:fit-content;
+	}
+}
